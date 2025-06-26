@@ -87,3 +87,5 @@ export default function TableSec() {
 
   return <Table columns={columns} dataSource={data} />
 }
+
+
