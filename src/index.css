@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,600&display=swap');
+*/
+@tailwind base;
+@tailwind components;
+
+body{
+
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif !important;
+
+} 
+
+
+.ant-menu-vertical  .menu-icon {
+
+  margin-top:8px !important;
+  margin-left:-2px !important;
+  font-size: 24px !important;
+
+
+}
+
+.ant-switch{
+
+  background: rgba(0, 0, 0, 0.25) ;
+
+}
+.ant-message-error{
+
+  background-color: #b93436  !important;
+  padding: 0.5rem 2rem;
+border-radius: 0.5rem;
+}
+
+.ant-message-success{
+
+  background-color: #11752a !important;
+  padding: 0.5rem 2rem;
+border-radius: 0.5rem;
+
+}
+
+.ant-message-notice-content{
+
+  color:white;
+  padding: 0 !important;
+
+}
+
+
+:root {
+
+
+  --brandColor: #1890FF !important;
+
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaaaaaa8; 
+  border-radius: 20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #868686; 
+}
+
+@tailwind utilities;
+
+
+@layer utilities {
+  .center {
+    @apply flex justify-center items-center;
+  }
+}
