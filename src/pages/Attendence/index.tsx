@@ -6,7 +6,7 @@ import { Badge, Button, Card, DatePicker, Form, Input, InputNumber, Popconfirm, 
 import { MdPlusOne, MdHdrPlus, MdSearch } from 'react-icons/md';
 import { PlusOutlined } from '@ant-design/icons';
 import BackCreateBtn from '../../shared/backCreate';
-import ActionProduct from './actionStaff';
+import ActionProduct from './actionAttendence';
 import { useFetchAll, useDelete } from '../../api/useApihook';
 import { FaEdit, FaSearch, FaTrashAlt } from 'react-icons/fa';
 import { useSelectOptions } from '../../shared/util/useSelectOptions'
@@ -60,8 +60,8 @@ export default function Attendence() {
 
         },
         {
-          title: 'staffId',
-          dataIndex: 'staffId',
+          title: 'staffId ',
+          dataIndex: 'staffId' ,
           key: 'staffId',       
 
         },

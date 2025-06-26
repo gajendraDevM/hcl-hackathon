@@ -14,17 +14,17 @@ const { Option } = Select;
 
 
 
-export default function Product() {
+export default function Shift() {
     
   const [page, setPage] = useState(1)
-    const [filtercate, setCategory] = useState('all') as any
+    const [filtercate, setshift] = useState('all') as any
     const [search, setSearch] = useState() as any
 
 
 
-  const {data, isLoading, isError, refetch } = useFetchAll(`product?page=${page}&category=${filtercate}&search=${search}`)
+  const {data, isLoading, isError, refetch } = useFetchAll(`product?page=${page}&shift=${filtercate}&search=${search}`)
 
-  const { data: category, isLoading:categoryLoading } = useSelectOptions('category')
+  const { data: shift, isLoading:shiftLoading } = useSelectOptions('shift')
 
   const { mutate } = useDelete('product', (res:any)=>onSuccess(res), ()=>null)
 
@@ -61,7 +61,7 @@ export default function Product() {
             title: 'Capacity',
             dataIndex: 'capacity_id',
             key: 'capacity_id',
-            render: (text:any) => <p className='my-auto' >{text?.category_name}</p> 
+            render: (text:any) => <p className='my-auto' >{text?.shift_name}</p> 
                 
           },
      
@@ -99,11 +99,11 @@ export default function Product() {
 
      
 
-      const handleCategoryFilter = (id:any) =>{        
+      const handleshiftFilter = (id:any) =>{        
 
         console.log({id});
         
-        setCategory(id)
+        setshift(id)
 
       }
 
@@ -138,7 +138,7 @@ export default function Product() {
      
       { open ? <>
         <BackCreateBtn clear={setEdit}  title={isEdit? "Update Shift":"Create Shift"} open={open} showDrawer={showDrawer}/>
-<ActionProduct isEdit={isEdit} showDrawer={showDrawer} refetch={refetch}  category={category} cloading={categoryLoading}/> 
+<ActionProduct isEdit={isEdit} showDrawer={showDrawer} refetch={refetch}  shift={shift} cloading={shiftLoading}/> 
       </> : <Card>
         <div className=' flex justify-between  items-center mb-4' >
 
@@ -146,14 +146,14 @@ export default function Product() {
 
   <Input style={{ width: 250 }} placeholder='Product' onChange={(data)=>setSearch(data.target.value)}   size='large' prefix={<MdSearch className='text-xl' />} />
 
-  <Select value={filtercate} style={{ width: 250 }} onChange={handleCategoryFilter} size="large" loading={categoryLoading}>
+  <Select value={filtercate} style={{ width: 250 }} onChange={handleshiftFilter} size="large" loading={shiftLoading}>
 
   <Option key="all" value="all">
-                  All Category
+                  All shift
                 </Option>
-                    {category?.docs?.map((item: any) => (
+                    {shift?.docs?.map((item: any) => (
                       <Option key={item._id} value={item._id}>
-                        {item.category_name}
+                        {item.shift_name}
                       </Option>
                     ))}
               

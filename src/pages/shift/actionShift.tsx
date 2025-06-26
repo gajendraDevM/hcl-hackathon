@@ -4,7 +4,7 @@ import { useCreate, useEdit } from '../../api/useApihook';
 import { useEffect } from 'react';
 import dayjs from 'dayjs';
 
-export default function CreateProduct({showDrawer, isEdit, refetch, cloading, category}:any) {
+export default function CreateShift({showDrawer, isEdit, refetch, cloading, category}:any) {
 
  
   const [form] = Form.useForm();

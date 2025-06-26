@@ -4,7 +4,7 @@ import { useUploadRequest } from '../../shared/util/uploadRequest'
 import { useEffect } from 'react'
 const { Option } = Select;
 
-export default function ProductForm({ data, category, cloading }: any) {
+export default function StaffForm({ data, category, cloading }: any) {
 
 
 
@@ -15,15 +15,9 @@ export default function ProductForm({ data, category, cloading }: any) {
   const { TextArea } = Input;
 
 
-  const dateFormat = 'DD/MM/YYYY';
+  const dateFormat = 'DD/MM/YYYY ';
 
-  useEffect(() => {
-
-
-    console.log({ category });
-
-
-  }, [])
+ 
 
 
 
