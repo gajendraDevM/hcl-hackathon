@@ -6,7 +6,7 @@ import { useCreate } from '../api/useApihook';
 interface Props {
     children: React.ReactNode;
     title: string;
-    url?: string;
+    url?: string ;
     form:any;
     onFinish:()=>void
 

@@ -52,7 +52,7 @@ export default function StaffForm({ data, category, cloading }: any) {
               <div className=' col-span-2' >
 
                 <Form.Item
-                  label="Select Shift Prefrence"
+                  label="Select Shift Prefrence "
                   name="sfift_prefrence"
                   rules={[{ required: true, message: 'Please select a shift prefrence!' }]}
                 >

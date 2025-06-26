@@ -11,17 +11,7 @@ export default function CreateStaff({showDrawer, isEdit, refetch, cloading, cate
 
   useEffect(()=>{
     console.log({isEdit});
-    dayjs.locale('en'); 
-    let edit = {...isEdit,
-      status: (isEdit?.status == 'In Stock') ? true : false,
-      expiry_date: dayjs(isEdit?.expiry_date),
-      date_of_procurement: dayjs(isEdit?.date_of_procurement),
-      category_id: { label:isEdit?.category_id?.category_name, value:isEdit?.category_id?._id}
-
-    }          
-
-
-  isEdit && form.setFieldsValue(edit)
+ 
 
   }, [isEdit])
 

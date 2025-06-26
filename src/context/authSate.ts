@@ -34,7 +34,7 @@ const getUser = async (token:string) => {
 
 let store = (set:any, get:any) => ({
     isAuthenticated: true,
-    token:"data?.token",
+    token:"data?.tokenn",
     blng:'en',
     user:null,
     themeDark:false,

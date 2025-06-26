@@ -18,7 +18,7 @@ export default function TableSec({columns, data, setPage, page, isLoading}:any) 
 
 
   let Sl_no = [{
-    title: 'Sl No.',
+    title: 'Sl No.' ,
     key: 'status',
     render: (text:any, record:any, index:number) => (page - 1) * 10 + index + 1, 
   }]
