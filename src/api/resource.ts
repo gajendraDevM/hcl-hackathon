@@ -10,6 +10,7 @@ const api = Accesskey(token)
 
 
 
+
   const getOne = (resource: string, id: any = null) =>api.get(`${resource}`)
   const getAll = (resource: any) =>api.get(`${resource}`)
   const getUpdate = (resource: string, newdata: any) =>api.put(`${resource}`, newdata)
