@@ -7,8 +7,10 @@ export default function Dashboard() {
     <PageWrapper>
     <div>Dashboard</div>
     {/* <Create title='basic' url='f'> */}
-<h1>hellloooo</h1>
+<h1>hellloooo</h1> 
       {/* </Create> */}
     </PageWrapper>
   )
 }
+
+

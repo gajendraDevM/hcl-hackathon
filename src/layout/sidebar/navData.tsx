@@ -15,6 +15,7 @@ const navdata = [
       icon:<MdCategory className='menu-icon'/>,
       label: <Link to='staff'>staff</Link>,
     },
+    
        {
       key:'shift',
       icon:<MdCategory className='menu-icon'/>,

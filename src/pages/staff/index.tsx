@@ -85,7 +85,7 @@ export default function staff() {
       
               <FaEdit onClick={()=>showDrawer(data)} className=' cursor-pointer text-[#919191]' />
               <Popconfirm
-    title="Delete the Staff"
+    title="Delete the Staff "
     onConfirm={()=>confirm(data)}
     okText="Yes"
     cancelText="No"

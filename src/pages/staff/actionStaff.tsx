@@ -10,7 +10,7 @@ export default function CreateProduct({showDrawer, isEdit, refetch, cloading, ca
   const [form] = Form.useForm();
 
   useEffect(()=>{
-    console.log({isEdit});
+    console.log({isEdit}) ;
     dayjs.locale('en'); 
     let edit = {...isEdit,
       status: (isEdit?.status == 'In Stock') ? true : false,

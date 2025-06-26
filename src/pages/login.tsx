@@ -66,7 +66,7 @@ const onFinish = (values: any) => {
     <Form.Item
       label="Email Id"
       name="email"
-      rules={[{ required: true, message: 'Please input your username!' }]}
+      rules={[{ required: true, message: 'Please input your username!!' }]}
     >
       <Input />
     </Form.Item>

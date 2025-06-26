@@ -97,7 +97,7 @@ export default function ProductForm({ data, category, cloading }: any) {
             
 
             
-  <div className=' col-span-2' >
+  <div className=' col-span-2 ' >
 
                 <Form.Item
                   label="staff COntact"
